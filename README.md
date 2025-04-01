@@ -1,4 +1,5 @@
 **Nadine Shill Portfolio**
+
 This is my personal portfolio website built with Next.js. It showcases my work, experience, projects, and skills in a clean layout with a sticky sidebar for seamless navigation. The site features a responsive design and a functional contact form.
 
 Features
