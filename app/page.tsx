@@ -7,10 +7,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-blue-50 text-gray-800 font-sans p-4">
-      {/* Use a responsive container that stacks on mobile and displays side-by-side on medium+ screens */}
       <div className="flex flex-col md:flex-row gap-8">
-        {/* Sidebar / Navigation */}
-        <aside className="w-full md:w-1/4 bg-white p-4 rounded shadow md:shadow-none sticky top-0 md:top-20">
+        {/* Static Sidebar / Navigation with same light blue background */}
+        <aside className="w-full md:w-1/4 p-4 mb-8 md:mb-0">
           <nav className="flex flex-col space-y-2">
             <a href="#about" className="hover:underline">About</a>
             <a href="#edu-exp" className="hover:underline">Education & Experience</a>
@@ -51,7 +50,7 @@ export default function HomePage() {
         <section className="w-full md:w-3/4 space-y-12">
           {/* About Section */}
           <div id="about">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Nadine Shill
             </h1>
             <p className="text-lg sm:text-xl mb-6">
@@ -59,19 +58,19 @@ export default function HomePage() {
             </p>
             {/* Stats Row */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-              <div className="flex flex-col items-center p-4 bg-white shadow rounded w-full sm:w-1/2 md:w-1/4">
+              <div className="flex flex-col items-center p-4 bg-blue-50 shadow rounded w-full sm:w-1/2 md:w-1/4">
                 <span className="text-2xl font-bold">3+</span>
                 <span className="text-sm text-gray-500">Years Exp</span>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white shadow rounded w-full sm:w-1/2 md:w-1/4">
+              <div className="flex flex-col items-center p-4 bg-blue-50 shadow rounded w-full sm:w-1/2 md:w-1/4">
                 <span className="text-2xl font-bold">40+</span>
                 <span className="text-sm text-gray-500">Hours/Week</span>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white shadow rounded w-full sm:w-1/2 md:w-1/4">
+              <div className="flex flex-col items-center p-4 bg-blue-50 shadow rounded w-full sm:w-1/2 md:w-1/4">
                 <span className="text-2xl font-bold">60%</span>
                 <span className="text-sm text-gray-500">AI</span>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white shadow rounded w-full sm:w-1/2 md:w-1/4">
+              <div className="flex flex-col items-center p-4 bg-blue-50 shadow rounded w-full sm:w-1/2 md:w-1/4">
                 <span className="text-2xl font-bold">40%</span>
                 <span className="text-sm text-gray-500">Data Analysis</span>
               </div>
@@ -80,7 +79,7 @@ export default function HomePage() {
 
           {/* Education & Experience Section */}
           <div id="edu-exp">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Education & Experience
             </h2>
             <div className="space-y-4">
@@ -113,7 +112,7 @@ export default function HomePage() {
 
           {/* Projects Section */}
           <div id="projects">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Projects
             </h2>
             <ul className="list-disc ml-5 space-y-2">
@@ -134,7 +133,7 @@ export default function HomePage() {
 
           {/* Certifications Section */}
           <div id="certifications">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Certifications
             </h2>
             <ul className="list-disc ml-5 space-y-2">
@@ -146,7 +145,7 @@ export default function HomePage() {
 
           {/* Skills Section */}
           <div id="skills">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Skills
             </h2>
             <ul className="list-disc ml-5 space-y-2">
@@ -159,7 +158,7 @@ export default function HomePage() {
 
           {/* Contact Section */}
           <div id="contact">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Contact
             </h2>
             <p className="mb-2">
