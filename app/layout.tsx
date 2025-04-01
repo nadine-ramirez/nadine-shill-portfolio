@@ -55,6 +55,12 @@ export default function RootLayout({
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
+          <section className="my-8 text-center">
+            <h1 className="text-5xl font-bold">Nadine Shill</h1>
+            <p className="text-xl mt-2">
+              Master’s student in Applied and Computational Mathematics at Johns Hopkins University
+            </p>
+          </section>
           {children}
           <Footer />
           <Analytics />
