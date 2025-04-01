@@ -47,21 +47,18 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
+        // Change light mode background to light blue and text to gray
+        'text-gray-800 bg-blue-50 dark:text-white dark:bg-gray-900',
         GeistSans.variable,
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <body className="antialiased mx-auto p-4">
+        <main className="flex flex-col">
           <Navbar />
-          <section className="my-8 text-center">
-            <h1 className="text-5xl font-bold">Nadine Shill</h1>
-            <p className="text-xl mt-2">
-              Master’s student in Applied and Computational Mathematics at Johns Hopkins University
-            </p>
+          <section className="my-8">
+            {children}
           </section>
-          {children}
           <Footer />
           <Analytics />
           <SpeedInsights />
